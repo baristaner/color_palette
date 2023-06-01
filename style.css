@@ -1,0 +1,81 @@
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#color-picker-container {
+  margin-bottom: 20px;
+}
+
+#save-palette-btn {
+  margin-top: 20px;
+}
+
+#color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+.color-container {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex: 25%;
+  max-width: 35%;
+  padding: 0 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.remove-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #3b3b3b;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #404040;
+}
+
+@media screen and (max-width: 768px) {
+  .remove-button {
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .remove-button {
+    top: 1px;
+    right: 1px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+}
